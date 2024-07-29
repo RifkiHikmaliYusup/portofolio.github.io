@@ -15,6 +15,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -58,13 +60,8 @@
         class="rounded-circle img-thumbnail"
       />
       <h1 class="display-4">Rifki Hikmali Yusup</h1>
-      <p class="lead">Saya seorang mahasiswa dengan jurusan Sistem Informasi</p>
-      <p>
-        LikedIn :
-        <a href="https://www.linkedin.com/in/rifki-yusup-87949b308/"
-          >Rifki Hikmali Yusup</a
-        >
-      </p>
+      <p class="lead"></p>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -76,7 +73,7 @@
     <!-- Akhir Jumbotron -->
     <!-- About -->
     <section id="about">
-      <div class="container">
+      <div class="container" data-aos="fade-down" data-aos-duration="2000">
         <div class="row text-center mb-3">
           <div class="col">
             <h2>About Me</h2>
@@ -108,89 +105,51 @@
     <!-- Akhir About -->
     <!-- Skill -->
     <section id="skill">
-      <div class="container">
+      <div class="container" data-aos="zoom-in-up" data-aos-duration="2000">
         <div class="row">
           <div class="col text-center mb-3">
             <h2>My Skill</h2>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-2 mb-3">
-            <div class="card">
-              <img
-                src="img/html.png"
-                class="card-img-top"
-                alt="html"
-                height="180"
-              />
-              <div class="card-body text-center fw-bold">
-                <p class="card-text">HTML</p>
-              </div>
+          <div class="col-lg-4 mb-3">
+            <div class="skill-box">
+              <h4 class="skill-name">HTML</h4>
+              <img src="img/html.png" class="skill-img" alt="html" />
             </div>
           </div>
-          <div class="col-md-2 mb-3">
-            <div class="card">
-              <img
-                src="img/css.png"
-                class="card-img-top"
-                alt="css"
-                height="180"
-              />
-              <div class="card-body text-center fw-bold">
-                <p class="card-text">CSS</p>
-              </div>
+          <div class="col-lg-4 mb-3">
+            <div class="skill-box">
+              <h4 class="skill-name">CSS</h4>
+              <img src="img/css.png" class="skill-img" alt="css" />
             </div>
           </div>
-          <div class="col-md-2 mb-3">
-            <div class="card">
-              <img
-                src="img/javascipt.png"
-                class="card-img-top"
-                alt="javascipt"
-                height="180"
-              />
-              <div class="card-body text-center fw-bold">
-                <p class="card-text">JavaScipt</p>
-              </div>
+          <div class="col-lg-4 mb-3">
+            <div class="skill-box">
+              <h4 class="skill-name">Php</h4>
+              <img src="img/php.png" class="skill-img" alt="php" />
             </div>
           </div>
-          <div class="col-md-2 mb-3">
-            <div class="card">
-              <img
-                src="img/reactjs.png"
-                class="card-img-top"
-                alt="reactjs"
-                height="180"
-              />
-              <div class="card-body text-center fw-bold">
-                <p class="card-text">React.Js</p>
-              </div>
+          <div class="col-lg-4 mb-3">
+            <div class="skill-box">
+              <h4 class="skill-name">Bootstrap</h4>
+              <img src="img/bootstrap.png" class="skill-img" alt="bootstrap" />
             </div>
           </div>
-          <div class="col-md-2 mb-3">
-            <div class="card">
+          <div class="col-lg-4 mb-3">
+            <div class="skill-box">
+              <h4 class="skill-name">JavaScript</h4>
               <img
-                src="img/php.png"
-                class="card-img-top"
-                alt="php"
-                height="180"
+                src="img/javascript.png"
+                class="skill-img"
+                alt="javascript"
               />
-              <div class="card-body text-center fw-bold">
-                <p class="card-text">php</p>
-              </div>
             </div>
           </div>
-          <div class="col-md-2 mb-3">
-            <div class="card">
-              <img
-                src="img/bootstrap.png"
-                class="card-img-top"
-                alt="bootstrap"
-                height="180"
-              />
-              <div class="card-body text-center fw-bold">
-                <p class="card-text">Bootstrap</p>
-              </div>
+          <div class="col-lg-4 mb-3">
+            <div class="skill-box">
+              <h4 class="skill-name">React.js</h4>
+              <img src="img/reactjs.png" class="skill-img" alt="reactjs" />
             </div>
           </div>
         </div>
@@ -214,7 +173,12 @@
         </div>
         <div class="row">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div
+              class="card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            >
               <img
                 src="img/perpus.png"
                 class="card-img-top"
@@ -230,7 +194,12 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div
+              class="card"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-delay="200"
+            >
               <img
                 src="img/kasir.png"
                 class="card-img-top"
@@ -247,7 +216,12 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div
+              class="card"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              data-aos-delay="300"
+            >
               <img
                 src="img/penjualan.png"
                 class="card-img-top"
@@ -357,6 +331,12 @@
     <!-- Footer -->
     <footer class="text-center p-3">
       <p>
+        LikedIn :
+        <a href="https://www.linkedin.com/in/rifki-yusup-87949b308/"
+          >Rifki Hikmali Yusup</a
+        >
+      </p>
+      <p>
         Created with <i class="bi bi-heart-fill text-danger"></i> by
         <a
           class="fw-bold text-black"
@@ -371,6 +351,38 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".lead", {
+        duration: 3,
+        delay: 1.5,
+        text: "Saya seorang mahasiswa dengan jurusan Sistem Informasi",
+      });
+      gsap.from(".jumbotron img", {
+        duration: 1,
+        y: -100,
+        opacity: 0,
+        ease: "bounce",
+      });
+      gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0 });
+      gsap.from(".display-4", {
+        duration: 1,
+        x: -50,
+        opacity: 0,
+        delay: 0.5,
+        ease: "back",
+      });
+    </script>
     <script>
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbx-Tq106xQT2GVB3Gyx1n4APjSp_tz0hFvN9Zy949mYYnIeI5dLPAJEmwbTTZpL5LLNsw/exec";
@@ -398,6 +410,14 @@
           })
           .catch((error) => console.error("Error!", error.message));
       });
+    </script>
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".skill-box"), {
+        max: 25,
+        speed: 400,
+      });
+      // VanillaTilt.init(document.querySelectorAll(".your-element"));
     </script>
   </body>
 </html>

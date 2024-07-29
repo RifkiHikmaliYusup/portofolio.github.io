@@ -14,3 +14,70 @@ section {
 footer {
   background-color: #ecebe8;
 }
+/* My Skill section */
+.skill-box {
+  position: relative;
+  background-color: #ecebe8;
+  border-radius: 10px;
+  height: 380px;
+  transform-style: preserve-3d;
+}
+.skill-box::before {
+  content: "MY";
+  position: absolute;
+  color: black;
+  font-size: 3.5em;
+  font-weight: bold;
+  font-style: italic;
+  transition: 0.5s;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 30px;
+  opacity: 0;
+}
+.skill-box:hover::before {
+  opacity: 0.2;
+}
+.skill-box::after {
+  content: "SKILL";
+  position: absolute;
+  color: black;
+  font-size: 3.3em;
+  font-weight: bold;
+  font-style: italic;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: 0.5s;
+  top: 280px;
+  opacity: 0;
+}
+.skill-box:hover::after {
+  opacity: 0.2;
+}
+.skill-name {
+  position: absolute;
+  color: black;
+  text-align: center;
+  font-size: 1.5em;
+  opacity: 0;
+  transition: 0.5s;
+  transform: translate3d(0, 0, 50px);
+  top: 0;
+  width: 100%;
+}
+.skill-box:hover .skill-name {
+  top: 20px;
+  opacity: 1;
+}
+.skill-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 100px);
+  height: 150px;
+  transition: 0.5s;
+  z-index: 10;
+}
+.skill-box:hover .skill-img {
+  transform: translate3d(-50%, -50%, 100px) scale(1.2);
+}
